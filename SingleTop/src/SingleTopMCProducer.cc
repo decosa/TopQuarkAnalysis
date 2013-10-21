@@ -73,6 +73,8 @@ SingleTopMCProducer::SingleTopMCProducer(const edm::ParameterSet& iConfig)
 
   produces<std::vector<reco::GenParticle> >("MCtops").setBranchAlias("MCtops");
 
+  produces<std::vector< int> >("MCtopsMotherOneID").setBranchAlias("MCtopsMotherOneID");
+  produces<std::vector< int> >("MCtopsMotherTwoID").setBranchAlias("MCtopsMotherTwoID");
   produces<std::vector< int> >("MCtopsMotherID").setBranchAlias("MCtopsMotherID");
   produces<std::vector< int> >("MCtopsGrannyID").setBranchAlias("MCtopsGrannyID");
   produces<std::vector< float> >("MCtopsVertexX").setBranchAlias("MCtopsVertexX");
@@ -86,6 +88,8 @@ SingleTopMCProducer::SingleTopMCProducer(const edm::ParameterSet& iConfig)
 
   produces<std::vector<reco::GenParticle> >("MCleptons").setBranchAlias("MCleptons");
 
+  produces<std::vector< int> >("MCleptonsMotherOneID").setBranchAlias("MCleptonsMotherOneID");
+  produces<std::vector< int> >("MCleptonsMotherTwoID").setBranchAlias("MCleptonsMotherTwoID");
   produces<std::vector< int> >("MCleptonsMotherID").setBranchAlias("MCleptonsMotherID");
   produces<std::vector< int> >("MCleptonsGrannyID").setBranchAlias("MCleptonsGrannyID");
   produces<std::vector< float> >("MCleptonsVertexX").setBranchAlias("MCleptonsVertexX");
@@ -99,7 +103,8 @@ SingleTopMCProducer::SingleTopMCProducer(const edm::ParameterSet& iConfig)
 
   produces<std::vector<reco::GenParticle> >("MCquarks").setBranchAlias("MCquarks");
 
-  produces<std::vector< int> >("MCquarksMotherID").setBranchAlias("MCquarksMotherID");
+  produces<std::vector< int> >("MCquarksMotherOneID").setBranchAlias("MCquarksMotherOneID");
+  produces<std::vector< int> >("MCquarksMotherTwoID").setBranchAlias("MCquarksMotherTwoID");
   produces<std::vector< int> >("MCquarksGrannyID").setBranchAlias("MCquarksGrannyID");
   produces<std::vector< float> >("MCquarksVertexX").setBranchAlias("MCquarksVertexX");
   produces<std::vector< float> >("MCquarksVertexY").setBranchAlias("MCquarksVertexY");
@@ -112,6 +117,8 @@ SingleTopMCProducer::SingleTopMCProducer(const edm::ParameterSet& iConfig)
 
   produces<std::vector<reco::GenParticle> >("MCbquarks").setBranchAlias("MCbquarks");
 
+  produces<std::vector< int> >("MCbquarksMotherOneID").setBranchAlias("MCbquarksMotherOneID");
+  produces<std::vector< int> >("MCbquarksMotherTwoID").setBranchAlias("MCbquarksMotherTwoID");
   produces<std::vector< int> >("MCbquarksMotherID").setBranchAlias("MCbquarksMotherID");
   produces<std::vector< int> >("MCbquarksGrannyID").setBranchAlias("MCbquarksGrannyID");
   produces<std::vector< float> >("MCbquarksVertexX").setBranchAlias("MCbquarksVertexX");
@@ -125,6 +132,8 @@ SingleTopMCProducer::SingleTopMCProducer(const edm::ParameterSet& iConfig)
 
   produces<std::vector<reco::GenParticle> >("MCneutrinos").setBranchAlias("MCneutrinos");
 
+  produces<std::vector< int> >("MCneutrinosMotherOneID").setBranchAlias("MCneutrinosMotherOneID");
+  produces<std::vector< int> >("MCneutrinosMotherTwoID").setBranchAlias("MCneutrinosMotherTwoID");
   produces<std::vector< int> >("MCneutrinosMotherID").setBranchAlias("MCneutrinosMotherID");
   produces<std::vector< int> >("MCneutrinosGrannyID").setBranchAlias("MCneutrinosGrannyID");
   produces<std::vector< float> >("MCneutrinosVertexX").setBranchAlias("MCneutrinosVertexX");
@@ -138,6 +147,8 @@ SingleTopMCProducer::SingleTopMCProducer(const edm::ParameterSet& iConfig)
 
   produces<std::vector<reco::GenParticle> >("MCtopsLepton").setBranchAlias("MCtopsLepton");
 
+  produces<std::vector< int> >("MCtopsLeptonMotherOneID").setBranchAlias("MCtopsLeptonMotherOneID");
+  produces<std::vector< int> >("MCtopsLeptonMotherTwoID").setBranchAlias("MCtopsLeptonMotherTwoID");
   produces<std::vector< int> >("MCtopsLeptonMotherID").setBranchAlias("MCtopsLeptonMotherID");
   produces<std::vector< int> >("MCtopsLeptonGrannyID").setBranchAlias("MCtopsLeptonGrannyID");
   produces<std::vector< float> >("MCtopsLeptonVertexX").setBranchAlias("MCtopsLeptonVertexX");
@@ -151,6 +162,8 @@ SingleTopMCProducer::SingleTopMCProducer(const edm::ParameterSet& iConfig)
 
   produces<std::vector<reco::GenParticle> >("MCtopsNeutrino").setBranchAlias("MCtopsNeutrino");
 
+  produces<std::vector< int> >("MCtopsNeutrinoMotherOneID").setBranchAlias("MCtopsNeutrinoMotherOneID");
+  produces<std::vector< int> >("MCtopsNeutrinoMotherTwoID").setBranchAlias("MCtopsNeutrinoMotherTwoID");
   produces<std::vector< int> >("MCtopsNeutrinoMotherID").setBranchAlias("MCtopsNeutrinoMotherID");
   produces<std::vector< int> >("MCtopsNeutrinoGrannyID").setBranchAlias("MCtopsNeutrinoGrannyID");
   produces<std::vector< float> >("MCtopsNeutrinoVertexX").setBranchAlias("MCtopsNeutrinoVertexX");
@@ -164,6 +177,8 @@ SingleTopMCProducer::SingleTopMCProducer(const edm::ParameterSet& iConfig)
 
   produces<std::vector<reco::GenParticle> >("MCtopsBQuark").setBranchAlias("MCtopsBQuark");
 
+  produces<std::vector< int> >("MCtopsBQuarkMotherOneID").setBranchAlias("MCBQuarkMotherOneID");
+  produces<std::vector< int> >("MCtopsBQuarkMotherTwoID").setBranchAlias("MCBQuarkMotherTwoID");
   produces<std::vector< int> >("MCtopsBQuarkMotherID").setBranchAlias("MCtopsBQuarkMotherID");
   produces<std::vector< int> >("MCtopsBQuarkGrannyID").setBranchAlias("MCtopsBQuarkGrannyID");
   produces<std::vector< float> >("MCtopsBQuarkVertexX").setBranchAlias("MCtopsBQuarkVertexX");
@@ -177,6 +192,8 @@ SingleTopMCProducer::SingleTopMCProducer(const edm::ParameterSet& iConfig)
 
   produces<std::vector<reco::GenParticle> >("MCtopsQuark").setBranchAlias("MCtopsQuark");
 
+  produces<std::vector< int> >("MCtopsQuarkMotherOneID").setBranchAlias("MCtopsQuarkMotherOneID");
+  produces<std::vector< int> >("MCtopsQuarkMotherTwoID").setBranchAlias("MCtopsQuarkMotherTwoID");
   produces<std::vector< int> >("MCtopsQuarkMotherID").setBranchAlias("MCtopsQuarkMotherID");
   produces<std::vector< int> >("MCtopsQuarkGrannyID").setBranchAlias("MCtopsQuarkGrannyID");
   produces<std::vector< float> >("MCtopsQuarkVertexX").setBranchAlias("MCtopsQuarkVertexX");
@@ -190,6 +207,8 @@ SingleTopMCProducer::SingleTopMCProducer(const edm::ParameterSet& iConfig)
 
   produces<std::vector<reco::GenParticle> >("MCtopsQuarkBar").setBranchAlias("MCtopsQuarkBar");
 
+  produces<std::vector< int> >("MCtopsQuarkBarMotherOneID").setBranchAlias("MCtopsQuarkBarMotherOneID");
+  produces<std::vector< int> >("MCtopsQuarkBarMotherTwoID").setBranchAlias("MCtopsQuarkBarMotherTwoID");
   produces<std::vector< int> >("MCtopsQuarkBarMotherID").setBranchAlias("MCtopsQuarkBarMotherID");
   produces<std::vector< int> >("MCtopsQuarkBarGrannyID").setBranchAlias("MCtopsQuarkBarGrannyID");
   produces<std::vector< float> >("MCtopsQuarkBarVertexX").setBranchAlias("MCtopsQuarkBarVertexX");
@@ -203,6 +222,8 @@ SingleTopMCProducer::SingleTopMCProducer(const edm::ParameterSet& iConfig)
 
   produces<std::vector<reco::GenParticle> >("MCtopsW").setBranchAlias("MCtopsW");
 
+  produces<std::vector< int> >("MCtopsWMotherOneID").setBranchAlias("MCtopsWMotherOneID");
+  produces<std::vector< int> >("MCtopsWMotherTwoID").setBranchAlias("MCtopsWMotherTwoID");
   produces<std::vector< int> >("MCtopsWMotherID").setBranchAlias("MCtopsWMotherID");
   produces<std::vector< int> >("MCtopsWGrannyID").setBranchAlias("MCtopsWGrannyID");
   produces<std::vector< float> >("MCtopsWVertexX").setBranchAlias("MCtopsWVertexX");
@@ -218,6 +239,8 @@ SingleTopMCProducer::SingleTopMCProducer(const edm::ParameterSet& iConfig)
   //Higgs
   produces<std::vector<reco::GenParticle> >("MCHiggs").setBranchAlias("MCHiggs");
   
+  produces<std::vector< int> >("MCHiggsMotherOneID").setBranchAlias("MCHiggsMotherOneID");
+  produces<std::vector< int> >("MCHiggsMotherTwoID").setBranchAlias("MCHiggsMotherTwoID");
   produces<std::vector< int> >("MCHiggsMotherID").setBranchAlias("MCHiggsMotherID");
   produces<std::vector< int> >("MCHiggsGrannyID").setBranchAlias("MCHiggsGrannyID");
   produces<std::vector< float> >("MCHiggsVertexX").setBranchAlias("MCHiggsVertexX");
@@ -232,6 +255,8 @@ SingleTopMCProducer::SingleTopMCProducer(const edm::ParameterSet& iConfig)
   
   produces<std::vector<reco::GenParticle> >("MCHiggsBQuark").setBranchAlias("MCHiggsBQuark");
 
+  produces<std::vector< int> >("MCHiggsBQuarkMotherOneID").setBranchAlias("MCBQuarkMotherOneID");
+  produces<std::vector< int> >("MCHiggsBQuarkMotherTwoID").setBranchAlias("MCBQuarkMotherTwoID");
   produces<std::vector< int> >("MCHiggsBQuarkMotherID").setBranchAlias("MCHiggsBQuarkMotherID");
   produces<std::vector< int> >("MCHiggsBQuarkGrannyID").setBranchAlias("MCHiggsBQuarkGrannyID");
   produces<std::vector< float> >("MCHiggsBQuarkVertexX").setBranchAlias("MCHiggsBQuarkVertexX");
@@ -272,6 +297,8 @@ iEvent.getByLabel(genParticlesSrc_, genParticles);
 
   std::auto_ptr< std::vector< reco::GenParticle > > MCtops( new std::vector<reco::GenParticle> );
 
+  std::auto_ptr< std::vector< int > > MCtopsMotherOneID( new std::vector<int> );
+  std::auto_ptr< std::vector< int > > MCtopsMotherTwoID( new std::vector<int> );
   std::auto_ptr< std::vector< int > > MCtopsMotherID( new std::vector<int> );
   std::auto_ptr< std::vector< int > > MCtopsGrannyID( new std::vector<int> );
 
@@ -288,6 +315,8 @@ iEvent.getByLabel(genParticlesSrc_, genParticles);
 
   std::auto_ptr< std::vector< reco::GenParticle > > MCleptons( new std::vector<reco::GenParticle> );
 
+  std::auto_ptr< std::vector< int > > MCleptonsMotherOneID( new std::vector<int> );
+  std::auto_ptr< std::vector< int > > MCleptonsMotherTwoID( new std::vector<int> );
   std::auto_ptr< std::vector< int > > MCleptonsMotherID( new std::vector<int> );
   std::auto_ptr< std::vector< int > > MCleptonsGrannyID( new std::vector<int> );
 
@@ -303,7 +332,8 @@ iEvent.getByLabel(genParticlesSrc_, genParticles);
 
   std::auto_ptr< std::vector< reco::GenParticle > > MCquarks( new std::vector<reco::GenParticle> );
 
-  std::auto_ptr< std::vector< int > > MCquarksMotherID( new std::vector<int> );
+  std::auto_ptr< std::vector< int > > MCquarksMotherOneID( new std::vector<int> );
+  std::auto_ptr< std::vector< int > > MCquarksMotherTwoID( new std::vector<int> );
   std::auto_ptr< std::vector< int > > MCquarksGrannyID( new std::vector<int> );
 
   std::auto_ptr< std::vector< int > > MCquarksNDau( new std::vector<int> );
@@ -318,6 +348,8 @@ iEvent.getByLabel(genParticlesSrc_, genParticles);
 
   std::auto_ptr< std::vector< reco::GenParticle > > MCbquarks( new std::vector<reco::GenParticle> );
 
+  std::auto_ptr< std::vector< int > > MCbquarksMotherOneID( new std::vector<int> );
+  std::auto_ptr< std::vector< int > > MCbquarksMotherTwoID( new std::vector<int> );
   std::auto_ptr< std::vector< int > > MCbquarksMotherID( new std::vector<int> );
   std::auto_ptr< std::vector< int > > MCbquarksGrannyID( new std::vector<int> );
 
@@ -333,6 +365,8 @@ iEvent.getByLabel(genParticlesSrc_, genParticles);
 
   std::auto_ptr< std::vector< reco::GenParticle > > MCneutrinos( new std::vector<reco::GenParticle> );
 
+  std::auto_ptr< std::vector< int > > MCneutrinosMotherOneID( new std::vector<int> );
+  std::auto_ptr< std::vector< int > > MCneutrinosMotherTwoID( new std::vector<int> );
   std::auto_ptr< std::vector< int > > MCneutrinosMotherID( new std::vector<int> );
   std::auto_ptr< std::vector< int > > MCneutrinosGrannyID( new std::vector<int> );
 
@@ -349,6 +383,8 @@ iEvent.getByLabel(genParticlesSrc_, genParticles);
   std::auto_ptr< std::vector< reco::GenParticle > > MCtopsLepton( new std::vector<reco::GenParticle> );
 
 
+  std::auto_ptr< std::vector< int > > MCtopsLeptonMotherOneID( new std::vector<int> );
+  std::auto_ptr< std::vector< int > > MCtopsLeptonMotherTwoID( new std::vector<int> );
   std::auto_ptr< std::vector< int > > MCtopsLeptonMotherID( new std::vector<int> );
   std::auto_ptr< std::vector< int > > MCtopsLeptonGrannyID( new std::vector<int> );
 
@@ -366,6 +402,8 @@ iEvent.getByLabel(genParticlesSrc_, genParticles);
 
   std::auto_ptr< std::vector< reco::GenParticle > > MCtopsW( new std::vector<reco::GenParticle> );
 
+  std::auto_ptr< std::vector< int > > MCtopsWMotherOneID( new std::vector<int> );
+  std::auto_ptr< std::vector< int > > MCtopsWMotherTwoID( new std::vector<int> );
   std::auto_ptr< std::vector< int > > MCtopsWMotherID( new std::vector<int> );
   std::auto_ptr< std::vector< int > > MCtopsWGrannyID( new std::vector<int> );
 
@@ -384,6 +422,8 @@ iEvent.getByLabel(genParticlesSrc_, genParticles);
  //Higgs
   std::auto_ptr< std::vector< reco::GenParticle > > MCHiggs( new std::vector<reco::GenParticle> );
   
+  std::auto_ptr< std::vector< int > > MCHiggsMotherOneID( new std::vector<int> );
+  std::auto_ptr< std::vector< int > > MCHiggsMotherTwoID( new std::vector<int> );
   std::auto_ptr< std::vector< int > > MCHiggsMotherID( new std::vector<int> );
   std::auto_ptr< std::vector< int > > MCHiggsGrannyID( new std::vector<int> );
   
@@ -398,9 +438,11 @@ iEvent.getByLabel(genParticlesSrc_, genParticles);
   std::auto_ptr< std::vector< float > > MCHiggsVertexZ( new std::vector<float> );
 
 
- std::auto_ptr< std::vector< reco::GenParticle > > MCHiggsBQuark( new std::vector<reco::GenParticle> );
+  std::auto_ptr< std::vector< reco::GenParticle > > MCHiggsBQuark( new std::vector<reco::GenParticle> );
 
 
+  std::auto_ptr< std::vector< int > > MCHiggsBQuarkMotherOneID( new std::vector<int> );
+  std::auto_ptr< std::vector< int > > MCHiggsBQuarkMotherTwoID( new std::vector<int> );
   std::auto_ptr< std::vector< int > > MCHiggsBQuarkMotherID( new std::vector<int> );
   std::auto_ptr< std::vector< int > > MCHiggsBQuarkGrannyID( new std::vector<int> );
 
@@ -419,6 +461,8 @@ iEvent.getByLabel(genParticlesSrc_, genParticles);
   std::auto_ptr< std::vector< reco::GenParticle > > MCtopsNeutrino( new std::vector<reco::GenParticle> );
 
 
+  std::auto_ptr< std::vector< int > > MCtopsNeutrinoMotherOneID( new std::vector<int> );
+  std::auto_ptr< std::vector< int > > MCtopsNeutrinoMotherTwoID( new std::vector<int> );
   std::auto_ptr< std::vector< int > > MCtopsNeutrinoMotherID( new std::vector<int> );
   std::auto_ptr< std::vector< int > > MCtopsNeutrinoGrannyID( new std::vector<int> );
 
@@ -435,6 +479,8 @@ iEvent.getByLabel(genParticlesSrc_, genParticles);
   std::auto_ptr< std::vector< reco::GenParticle > > MCtopsBQuark( new std::vector<reco::GenParticle> );
 
 
+  std::auto_ptr< std::vector< int > > MCtopsBQuarkMotherOneID( new std::vector<int> );
+  std::auto_ptr< std::vector< int > > MCtopsBQuarkMotherTwoID( new std::vector<int> );
   std::auto_ptr< std::vector< int > > MCtopsBQuarkMotherID( new std::vector<int> );
   std::auto_ptr< std::vector< int > > MCtopsBQuarkGrannyID( new std::vector<int> );
 
@@ -451,6 +497,8 @@ iEvent.getByLabel(genParticlesSrc_, genParticles);
   std::auto_ptr< std::vector< reco::GenParticle > > MCtopsQuark( new std::vector<reco::GenParticle> );
 
 
+  std::auto_ptr< std::vector< int > > MCtopsQuarkMotherOneID( new std::vector<int> );
+  std::auto_ptr< std::vector< int > > MCtopsQuarkMotherTwoID( new std::vector<int> );
   std::auto_ptr< std::vector< int > > MCtopsQuarkMotherID( new std::vector<int> );
   std::auto_ptr< std::vector< int > > MCtopsQuarkGrannyID( new std::vector<int> );
 
@@ -468,6 +516,8 @@ iEvent.getByLabel(genParticlesSrc_, genParticles);
   std::auto_ptr< std::vector< reco::GenParticle > > MCtopsQuarkBar( new std::vector<reco::GenParticle> );
 
 
+  std::auto_ptr< std::vector< int > > MCtopsQuarkBarMotherOneID( new std::vector<int> );
+  std::auto_ptr< std::vector< int > > MCtopsQuarkBarMotherTwoID( new std::vector<int> );
   std::auto_ptr< std::vector< int > > MCtopsQuarkBarMotherID( new std::vector<int> );
   std::auto_ptr< std::vector< int > > MCtopsQuarkBarGrannyID( new std::vector<int> );
 
@@ -632,7 +682,8 @@ MCneutrinos->push_back( (*t));
 	    
 	    if (abs (t->pdgId ()) < 6){
 	      MCquarks->push_back (*t);
-	      if(t->mother()) MCquarksMotherID->push_back( t->mother()->pdgId());
+	      if(t->mother(0)) MCquarksMotherOneID->push_back( t->mother(0)->pdgId());
+	      if(t->mother(0)) MCquarksMotherTwoID->push_back( t->mother(0)->pdgId());
 	      if(t->mother() && t->mother()->mother())MCquarksGrannyID->push_back(t->mother()->mother()->pdgId());
 	      MCquarksVertexX->push_back(t->vertex().x());
 	      MCquarksVertexY->push_back(t->vertex().y());
@@ -719,8 +770,16 @@ MCneutrinos->push_back( (*t));
 		((abs (t->mother ()->pdgId ()) > 22 && abs (t->mother ()->pdgId ()) < 40) || (abs (t->mother ()->pdgId ()) > 999999 && abs (t->mother ()->pdgId ()) < 2999999)))
 	      {	
 		MCleptons->push_back ( (*t));
+		if(t->mother(0)) MCleptonsMotherOneID->push_back( t->mother(0)->pdgId());
+		else MCleptonsMotherOneID->push_back(0);
+		if(t->mother(1)) MCleptonsMotherTwoID->push_back( t->mother(1)->pdgId());
+		else MCleptonsMotherTwoID->push_back(0);
+		if(t->mother() && t->mother()->mother())MCleptonsGrannyID->push_back(t->mother()->mother()->pdgId());
+		else MCleptonsGrannyID->push_back(0);
+		
 		if(t->mother()) MCleptonsMotherID->push_back( t->mother()->pdgId());
 		if(t->mother() && t->mother()->mother())MCleptonsGrannyID->push_back(t->mother()->mother()->pdgId());
+		
 		MCleptonsVertexX->push_back(t->vertex().x());
 		MCleptonsVertexY->push_back(t->vertex().y());
 		MCleptonsVertexZ->push_back(t->vertex().z());
@@ -744,6 +803,13 @@ MCneutrinos->push_back( (*t));
 		((abs (t->mother ()->pdgId ()) > 22 && abs (t->mother ()->pdgId ()) < 40) || (abs (t->mother ()->pdgId ()) > 999999 && abs (t->mother ()->pdgId ()) < 2999999)))
 	      {
 		MCneutrinos->push_back( (*t));
+		if(t->mother(0)) MCneutrinosMotherOneID->push_back( t->mother(0)->pdgId());
+		else MCneutrinosMotherOneID->push_back(0);
+		if(t->mother(1)) MCneutrinosMotherTwoID->push_back( t->mother(1)->pdgId());
+		else MCneutrinosMotherTwoID->push_back(0);
+		if(t->mother() && t->mother()->mother())MCneutrinosGrannyID->push_back(t->mother()->mother()->pdgId());
+		else MCneutrinosGrannyID->push_back(0);
+	
 		if(t->mother()) MCneutrinosMotherID->push_back( t->mother()->pdgId());
 		if(t->mother() && t->mother()->mother())MCneutrinosGrannyID->push_back(t->mother()->mother()->pdgId());
 		MCneutrinosVertexX->push_back(t->vertex().x());
@@ -775,8 +841,13 @@ MCneutrinos->push_back( (*t));
 	      }
 	    if (abs (t->pdgId ()) < 6){
 	      MCquarks->push_back (*t);
-	      if(t->mother()) MCquarksMotherID->push_back( t->mother()->pdgId());
+	      if(t->mother(0)) MCquarksMotherOneID->push_back( t->mother(0)->pdgId());
+	      else MCquarksMotherOneID->push_back(0);
+	      if(t->mother(1)) MCquarksMotherTwoID->push_back( t->mother(1)->pdgId());
+	      else MCquarksMotherTwoID->push_back(0);
 	      if(t->mother() && t->mother()->mother())MCquarksGrannyID->push_back(t->mother()->mother()->pdgId());
+	      else MCquarksGrannyID->push_back(0);
+
 	      MCquarksVertexX->push_back(t->vertex().x());
 	      MCquarksVertexY->push_back(t->vertex().y());
 	      MCquarksVertexZ->push_back(t->vertex().z());
@@ -797,8 +868,16 @@ MCneutrinos->push_back( (*t));
 	    }
 	    if (abs (t->pdgId ()) == 5){
 	      MCbquarks->push_back (*t);
+	      if(t->mother(0)) MCbquarksMotherOneID->push_back( t->mother(0)->pdgId());
+	      else MCbquarksMotherOneID->push_back(0);
+	      if(t->mother(1)) MCbquarksMotherTwoID->push_back( t->mother(1)->pdgId());
+	      else MCbquarksMotherTwoID->push_back(0);
+	      if(t->mother() && t->mother()->mother())MCbquarksGrannyID->push_back(t->mother()->mother()->pdgId());
+	      else MCbquarksGrannyID->push_back(0);
+	    
 	      if(t->mother()) MCbquarksMotherID->push_back( t->mother()->pdgId());
 	      if(t->mother() && t->mother()->mother())MCbquarksGrannyID->push_back(t->mother()->mother()->pdgId());
+	      
 	      MCbquarksVertexX->push_back(t->vertex().x());
 	      MCbquarksVertexY->push_back(t->vertex().y());
 	      MCbquarksVertexZ->push_back(t->vertex().z());
@@ -827,12 +906,20 @@ MCneutrinos->push_back( (*t));
 	    
 	    if (abs (t->pdgId ()) == 25)
 	      {
-		std::cout << "************************ Found a Higgs particle ******************************" << std::endl;
+		//std::cout << "************************ Found a Higgs particle ******************************" << std::endl;
 		higgs_ = (&(*t));
 		reco::GenParticle::const_iterator td = t->begin ();
 		MCHiggs->push_back(*t);
+		if(t->mother(0)) MCHiggsMotherOneID->push_back( t->mother(0)->pdgId());
+		else MCHiggsMotherOneID->push_back(0);
+		if(t->mother(1)) MCHiggsMotherTwoID->push_back( t->mother(1)->pdgId());
+		else MCHiggsMotherTwoID->push_back(0);
+		if(t->mother() && t->mother()->mother())MCHiggsGrannyID->push_back(t->mother()->mother()->pdgId());
+		else MCHiggsGrannyID->push_back(0);
+		
 		if(t->mother()) MCHiggsMotherID->push_back( t->mother()->pdgId());
 		if(t->mother() && t->mother()->mother())MCHiggsGrannyID->push_back(t->mother()->mother()->pdgId());
+		
 		MCHiggsVertexX->push_back(t->vertex().x());
 		MCHiggsVertexY->push_back(t->vertex().y());
 		MCHiggsVertexZ->push_back(t->vertex().z());
@@ -856,6 +943,13 @@ MCneutrinos->push_back( (*t));
 		    if (abs (td->pdgId ()) == 5){   
 		      bquarkHiggs_  = &(*td);
 		      MCHiggsBQuark->push_back( *(dynamic_cast< const reco::GenParticle *> (&(*td))) );
+		      if(td->mother(0)) MCHiggsBQuarkMotherOneID->push_back( td->mother(0)->pdgId());
+		      else MCHiggsBQuarkMotherOneID->push_back(0);
+		      if(td->mother(1)) MCHiggsBQuarkMotherTwoID->push_back( td->mother(1)->pdgId());
+		      else MCHiggsBQuarkMotherTwoID->push_back(0);
+		      if(td->mother() && td->mother()->mother())MCHiggsBQuarkGrannyID->push_back(td->mother()->mother()->pdgId());
+		      else MCHiggsBQuarkGrannyID->push_back(0);
+	
 		      if(td->mother()) MCHiggsBQuarkMotherID->push_back( td->mother()->pdgId());
 		      if(td->mother() && td->mother()->mother())MCHiggsBQuarkGrannyID->push_back(td->mother()->mother()->pdgId());
 		      MCHiggsBQuarkVertexX->push_back(td->vertex().x());
@@ -896,8 +990,17 @@ MCneutrinos->push_back( (*t));
 	      top_ = (&(*t));
 	      reco::GenParticle::const_iterator td = t->begin ();
 	      MCtops->push_back(*t);
+	      if(t->mother(0)) MCtopsMotherOneID->push_back( t->mother(0)->pdgId());
+	      else MCtopsMotherOneID->push_back(0);
+	      if(t->mother(1)) MCtopsMotherTwoID->push_back( t->mother(1)->pdgId());
+	      else MCtopsMotherTwoID->push_back(0);
+	      if(t->mother() && t->mother()->mother())MCtopsGrannyID->push_back(t->mother()->mother()->pdgId());
+	      else MCtopsGrannyID->push_back(0);
+	
+
 	      if(t->mother()) MCtopsMotherID->push_back( t->mother()->pdgId());
 	      if(t->mother() && t->mother()->mother())MCtopsGrannyID->push_back(t->mother()->mother()->pdgId());
+	      
 	      MCtopsVertexX->push_back(t->vertex().x());
 	      MCtopsVertexY->push_back(t->vertex().y());
 	      MCtopsVertexZ->push_back(t->vertex().z());
@@ -921,6 +1024,14 @@ MCneutrinos->push_back( (*t));
 		    {
 		      W_  = (&(*td));
 		      MCtopsW->push_back( *(dynamic_cast< const reco::GenParticle *> (&(*td))) );
+		      if(td->mother(0)) MCtopsWMotherOneID->push_back( td->mother(0)->pdgId());
+		      else MCtopsWMotherOneID->push_back(0);
+		      if(td->mother(1)) MCtopsWMotherTwoID->push_back( td->mother(1)->pdgId());
+		      else MCtopsWMotherTwoID->push_back(0);
+		      if(td->mother() && td->mother()->mother())MCtopsWGrannyID->push_back(td->mother()->mother()->pdgId());
+		      else MCtopsWGrannyID->push_back(0);
+	
+
 		      if(td->mother()) MCtopsWMotherID->push_back( td->mother()->pdgId());
 		      if(td->mother() && td->mother()->mother())MCtopsWGrannyID->push_back(td->mother()->mother()->pdgId());
 		      MCtopsWVertexX->push_back(td->vertex().x());
@@ -950,7 +1061,13 @@ MCneutrinos->push_back( (*t));
 			    {
 			      quark_  = &(*Wd);
 			      MCtopsQuark->push_back( *(dynamic_cast< const reco::GenParticle *> (&(*Wd))) );
-			      
+			      if(Wd->mother(0)) MCtopsQuarkMotherOneID->push_back( Wd->mother(0)->pdgId());
+			      else MCtopsQuarkMotherOneID->push_back(0);
+			      if(Wd->mother(1)) MCtopsQuarkMotherTwoID->push_back( Wd->mother(1)->pdgId());
+			      else MCtopsQuarkMotherTwoID->push_back(0);
+			      if(Wd->mother() && Wd->mother()->mother())MCtopsQuarkGrannyID->push_back(Wd->mother()->mother()->pdgId());
+			      else MCtopsQuarkGrannyID->push_back(0);
+	
 			      if(Wd->mother()) MCtopsQuarkMotherID->push_back( Wd->mother()->pdgId());
 			      if(Wd->mother() && Wd->mother()->mother())MCtopsQuarkGrannyID->push_back(Wd->mother()->mother()->pdgId());
 			      MCtopsQuarkVertexX->push_back(Wd->vertex().x());
@@ -977,7 +1094,13 @@ MCneutrinos->push_back( (*t));
 			    {
 			      quarkBar_  = &(*Wd);
 			      MCtopsQuarkBar->push_back( *(dynamic_cast< const reco::GenParticle *> (&(*Wd))) );
-			      
+			      if(Wd->mother(0)) MCtopsQuarkBarMotherOneID->push_back( Wd->mother(0)->pdgId());
+			      else MCtopsQuarkBarMotherOneID->push_back(0);
+			      if(Wd->mother(1)) MCtopsQuarkBarMotherTwoID->push_back( Wd->mother(1)->pdgId());
+			      else MCtopsQuarkBarMotherTwoID->push_back(0);
+			      if(Wd->mother() && Wd->mother()->mother())MCtopsQuarkBarGrannyID->push_back(Wd->mother()->mother()->pdgId());
+			      else MCtopsQuarkBarGrannyID->push_back(0);
+	
 			      if(Wd->mother()) MCtopsQuarkBarMotherID->push_back( Wd->mother()->pdgId());
 			      if(Wd->mother() && Wd->mother()->mother())MCtopsQuarkBarGrannyID->push_back(Wd->mother()->mother()->pdgId());
 			      MCtopsQuarkBarVertexX->push_back(Wd->vertex().x());
@@ -1002,7 +1125,13 @@ MCneutrinos->push_back( (*t));
 			    {
 			      lepton_  = &(*Wd);
 			      MCtopsLepton->push_back( *(dynamic_cast< const reco::GenParticle *> (&(*Wd))) );
-
+			      if(Wd->mother(0)) MCtopsLeptonMotherOneID->push_back( Wd->mother(0)->pdgId());
+			      else MCtopsLeptonMotherOneID->push_back(0);
+			      if(Wd->mother(1)) MCtopsLeptonMotherTwoID->push_back( Wd->mother(1)->pdgId());
+			      else MCtopsLeptonMotherTwoID->push_back(0);
+			      if(Wd->mother() && Wd->mother()->mother())MCtopsLeptonGrannyID->push_back(Wd->mother()->mother()->pdgId());
+			      else MCtopsLeptonGrannyID->push_back(0);
+	
 			      if(Wd->mother()) MCtopsLeptonMotherID->push_back( Wd->mother()->pdgId());
 			      if(Wd->mother() && Wd->mother()->mother())MCtopsLeptonGrannyID->push_back(Wd->mother()->mother()->pdgId());
 			      MCtopsLeptonVertexX->push_back(Wd->vertex().x());
@@ -1028,7 +1157,13 @@ MCneutrinos->push_back( (*t));
 			    {
 			      neutrino_  = &(*Wd);
 			      MCtopsNeutrino->push_back( *(dynamic_cast< const reco::GenParticle *> (&(*Wd))) );
-
+			      if(Wd->mother(0)) MCtopsNeutrinoMotherOneID->push_back( Wd->mother(0)->pdgId());
+			      else MCtopsNeutrinoMotherOneID->push_back(0);
+			      if(Wd->mother(1)) MCtopsNeutrinoMotherTwoID->push_back( Wd->mother(1)->pdgId());
+			      else MCtopsNeutrinoMotherTwoID->push_back(0);
+			      if(Wd->mother() && Wd->mother()->mother())MCtopsNeutrinoGrannyID->push_back(Wd->mother()->mother()->pdgId());
+			      else MCtopsNeutrinoGrannyID->push_back(0);
+	
 			      if(Wd->mother()) MCtopsNeutrinoMotherID->push_back( Wd->mother()->pdgId());
 			      if(Wd->mother() && Wd->mother()->mother())MCtopsNeutrinoGrannyID->push_back(Wd->mother()->mother()->pdgId());
 			      MCtopsNeutrinoVertexX->push_back(Wd->vertex().x());
@@ -1054,6 +1189,13 @@ MCneutrinos->push_back( (*t));
 		    }
 		  else if (abs (td->pdgId ()) == 5){   bquark_  = &(*td);
 		    MCtopsBQuark->push_back( *(dynamic_cast< const reco::GenParticle *> (&(*td))) );
+		    if(td->mother(0)) MCtopsBQuarkMotherOneID->push_back( td->mother(0)->pdgId());
+		    else MCtopsBQuarkMotherOneID->push_back(0);
+		    if(td->mother(1)) MCtopsBQuarkMotherTwoID->push_back( td->mother(1)->pdgId());
+		    else MCtopsBQuarkMotherTwoID->push_back(0);
+		    if(td->mother() && td->mother()->mother())MCtopsBQuarkGrannyID->push_back(td->mother()->mother()->pdgId());
+		    else MCtopsBQuarkGrannyID->push_back(0);
+		    
 		    if(td->mother()) MCtopsBQuarkMotherID->push_back( td->mother()->pdgId());
 		    if(td->mother() && td->mother()->mother())MCtopsBQuarkGrannyID->push_back(td->mother()->mother()->pdgId());
 		    MCtopsBQuarkVertexX->push_back(td->vertex().x());
@@ -1109,6 +1251,8 @@ MCneutrinos->push_back( (*t));
   //cout<<"AT THE END"<<endl;
   //  iEvent.put(MCstops,"MCstops");
   iEvent.put(MCtops,"MCtops");
+  iEvent.put(MCtopsMotherOneID,"MCtopsMotherOneID");
+  iEvent.put(MCtopsMotherTwoID,"MCtopsMotherTwoID");
   iEvent.put(MCtopsMotherID,"MCtopsMotherID");
   iEvent.put(MCtopsGrannyID,"MCtopsGrannyID");
   iEvent.put(MCtopsVertexX,"MCtopsVertexX");
@@ -1123,6 +1267,8 @@ MCneutrinos->push_back( (*t));
 
 
   iEvent.put(MCtopsW,"MCtopsW");
+  iEvent.put(MCtopsWMotherOneID,"MCtopsWMotherOneID");
+  iEvent.put(MCtopsWMotherTwoID,"MCtopsWMotherTwoID");
   iEvent.put(MCtopsWMotherID,"MCtopsWMotherID");
   iEvent.put(MCtopsWGrannyID,"MCtopsWGrannyID");
   iEvent.put(MCtopsWVertexX,"MCtopsWVertexX");
@@ -1136,6 +1282,8 @@ MCneutrinos->push_back( (*t));
   iEvent.put(MCtopsWDauFourID,"MCtopsWDauFourID");
 
   iEvent.put(MCtopsBQuark,"MCtopsBQuark");
+  iEvent.put(MCtopsBQuarkMotherOneID,"MCtopsBQuarkMotherOneID");
+  iEvent.put(MCtopsBQuarkMotherTwoID,"MCtopsBQuarkMotherTwoID");
   iEvent.put(MCtopsBQuarkMotherID,"MCtopsBQuarkMotherID");
   iEvent.put(MCtopsBQuarkGrannyID,"MCtopsBQuarkGrannyID");
   iEvent.put(MCtopsBQuarkVertexX,"MCtopsBQuarkVertexX");
@@ -1151,6 +1299,8 @@ MCneutrinos->push_back( (*t));
 
 
   iEvent.put(MCtopsLepton,"MCtopsLepton");
+  iEvent.put(MCtopsLeptonMotherOneID,"MCtopsLeptonMotherOneID");
+  iEvent.put(MCtopsLeptonMotherTwoID,"MCtopsLeptonMotherTwoID");
   iEvent.put(MCtopsLeptonMotherID,"MCtopsLeptonMotherID");
   iEvent.put(MCtopsLeptonGrannyID,"MCtopsLeptonGrannyID");
   iEvent.put(MCtopsLeptonVertexX,"MCtopsLeptonVertexX");
@@ -1164,6 +1314,8 @@ MCneutrinos->push_back( (*t));
   iEvent.put(MCtopsLeptonDauFourID,"MCtopsLeptonDauFourID");
 
   iEvent.put(MCtopsNeutrino,"MCtopsNeutrino");
+  iEvent.put(MCtopsNeutrinoMotherOneID,"MCtopsNeutrinoMotherOneID");
+  iEvent.put(MCtopsNeutrinoMotherTwoID,"MCtopsNeutrinoMotherTwoID");
   iEvent.put(MCtopsNeutrinoMotherID,"MCtopsNeutrinoMotherID");
   iEvent.put(MCtopsNeutrinoGrannyID,"MCtopsNeutrinoGrannyID");
   iEvent.put(MCtopsNeutrinoVertexX,"MCtopsNeutrinoVertexX");
@@ -1177,6 +1329,8 @@ MCneutrinos->push_back( (*t));
   iEvent.put(MCtopsNeutrinoDauFourID,"MCtopsNeutrinoDauFourID");
 
   iEvent.put(MCtopsQuark,"MCtopsQuark");
+  iEvent.put(MCtopsQuarkMotherOneID,"MCtopsQuarkMotherOneID");
+  iEvent.put(MCtopsQuarkMotherTwoID,"MCtopsQuarkMotherTwoID");
   iEvent.put(MCtopsQuarkMotherID,"MCtopsQuarkMotherID");
   iEvent.put(MCtopsQuarkGrannyID,"MCtopsQuarkGrannyID");
   iEvent.put(MCtopsQuarkVertexX,"MCtopsQuarkVertexX");
@@ -1190,6 +1344,8 @@ MCneutrinos->push_back( (*t));
   iEvent.put(MCtopsQuarkDauFourID,"MCtopsQuarkDauFourID");
 
   iEvent.put(MCtopsQuarkBar,"MCtopsQuarkBar");
+  iEvent.put(MCtopsQuarkBarMotherOneID,"MCtopsQuarkBarMotherOneID");
+  iEvent.put(MCtopsQuarkBarMotherTwoID,"MCtopsQuarkBarMotherTwoID");
   iEvent.put(MCtopsQuarkBarMotherID,"MCtopsQuarkBarMotherID");
   iEvent.put(MCtopsQuarkBarGrannyID,"MCtopsQuarkBarGrannyID");
   iEvent.put(MCtopsQuarkBarVertexX,"MCtopsQuarkBarVertexX");
@@ -1203,6 +1359,8 @@ MCneutrinos->push_back( (*t));
   iEvent.put(MCtopsQuarkBarDauFourID,"MCtopsQuarkBarDauFourID");
 
   iEvent.put(MCleptons,"MCleptons");
+  iEvent.put(MCleptonsMotherOneID,"MCleptonsMotherOneID");
+  iEvent.put(MCleptonsMotherTwoID,"MCleptonsMotherTwoID");
   iEvent.put(MCleptonsMotherID,"MCleptonsMotherID");
   iEvent.put(MCleptonsGrannyID,"MCleptonsGrannyID");
   iEvent.put(MCleptonsVertexX,"MCleptonsVertexX");
@@ -1216,7 +1374,8 @@ MCneutrinos->push_back( (*t));
   iEvent.put(MCleptonsDauFourID,"MCleptonsDauFourID");
 
   iEvent.put(MCquarks,"MCquarks");
-  iEvent.put(MCquarksMotherID,"MCquarksMotherID");
+  iEvent.put(MCquarksMotherOneID,"MCquarksMotherOneID");
+  iEvent.put(MCquarksMotherTwoID,"MCquarksMotherTwoID");
   iEvent.put(MCquarksGrannyID,"MCquarksGrannyID");
   iEvent.put(MCquarksVertexX,"MCquarksVertexX");
   iEvent.put(MCquarksVertexY,"MCquarksVertexY");
@@ -1229,6 +1388,8 @@ MCneutrinos->push_back( (*t));
   iEvent.put(MCquarksDauFourID,"MCquarksDauFourID");
 
   iEvent.put(MCbquarks,"MCbquarks");
+  iEvent.put(MCbquarksMotherOneID,"MCbquarksMotherOneID");
+  iEvent.put(MCbquarksMotherTwoID,"MCbquarksMotherTwoID");
   iEvent.put(MCbquarksMotherID,"MCbquarksMotherID");
   iEvent.put(MCbquarksGrannyID,"MCbquarksGrannyID");
   iEvent.put(MCbquarksVertexX,"MCbquarksVertexX");
@@ -1242,6 +1403,8 @@ MCneutrinos->push_back( (*t));
   iEvent.put(MCbquarksDauFourID,"MCbquarksDauFourID");
 
   iEvent.put(MCneutrinos,"MCneutrinos");
+  iEvent.put(MCneutrinosMotherOneID,"MCneutrinosMotherOneID");
+  iEvent.put(MCneutrinosMotherTwoID,"MCneutrinosMotherTwoID");
   iEvent.put(MCneutrinosMotherID,"MCneutrinosMotherID");
   iEvent.put(MCneutrinosGrannyID,"MCneutrinosGrannyID");
   iEvent.put(MCneutrinosVertexX,"MCneutrinosVertexX");
@@ -1257,6 +1420,8 @@ MCneutrinos->push_back( (*t));
 
  //Higgs
   iEvent.put(MCHiggs,"MCHiggs");
+  iEvent.put(MCHiggsMotherOneID,"MCHiggsMotherOneID");
+  iEvent.put(MCHiggsMotherTwoID,"MCHiggsMotherTwoID");
   iEvent.put(MCHiggsMotherID,"MCHiggsMotherID");
   iEvent.put(MCHiggsGrannyID,"MCHiggsGrannyID");
   iEvent.put(MCHiggsVertexX,"MCHiggsVertexX");
@@ -1270,6 +1435,8 @@ MCneutrinos->push_back( (*t));
   iEvent.put(MCHiggsDauFourID,"MCHiggsDauFourID");
 
   iEvent.put(MCHiggsBQuark,"MCHiggsBQuark");
+  iEvent.put(MCHiggsBQuarkMotherOneID,"MCHiggsBQuarkMotherOneID");
+  iEvent.put(MCHiggsBQuarkMotherTwoID,"MCHiggsBQuarkMotherTwoID");
   iEvent.put(MCHiggsBQuarkMotherID,"MCHiggsBQuarkMotherID");
   iEvent.put(MCHiggsBQuarkGrannyID,"MCHiggsBQuarkGrannyID");
   iEvent.put(MCHiggsBQuarkVertexX,"MCHiggsBQuarkVertexX");
